@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Películas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h1>🎬 CRUD de Películas</h1>
+
+    <div class="formulario">
+
+        <input type="hidden" id="id">
+
+        <input type="text" id="titulo" placeholder="Título">
+
+        <input type="text" id="director" placeholder="Director">
+
+        <input type="number" id="anio" placeholder="Año">
+
+        <input type="text" id="genero" placeholder="Género">
+
+        <input type="text" id="imagen" placeholder="URL de la imagen">
+
+        <button onclick="guardar()">Guardar</button>
+
+        <button onclick="actualizar()">Actualizar</button>
+
+    </div>
+
+    <div id="tablaPeliculas"></div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
